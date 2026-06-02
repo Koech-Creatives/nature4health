@@ -41,3 +41,6 @@
 {"level":"debug","message":"Executing script in browser","scriptLength":97,"service":"mcp-puppeteer","timestamp":"2026-06-02 20:09:14.369"}
 {"error":"Attempted to use detached Frame 'BA4743EC7DE4B236879F8FD86E36974F'.","level":"error","message":"Script evaluation failed","service":"mcp-puppeteer","timestamp":"2026-06-02 20:09:14.369"}
 {"arguments":{"name":"slide10_fixed_v2","wait_for_previous":true},"level":"debug","message":"Tool call received","service":"mcp-puppeteer","timestamp":"2026-06-02 20:09:14.376","tool":"puppeteer_screenshot"}
+{"level":"info","message":"Puppeteer MCP Server closing","service":"mcp-puppeteer","timestamp":"2026-06-02 21:30:16.107"}
+{"level":"info","message":"Starting MCP server","service":"mcp-puppeteer","timestamp":"2026-06-02 21:30:31.991"}
+{"level":"info","message":"MCP server started successfully","service":"mcp-puppeteer","timestamp":"2026-06-02 21:30:31.994"}
