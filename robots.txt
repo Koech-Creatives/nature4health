@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://n4h-nature-health.onrender.com/sitemap.xml

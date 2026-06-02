@@ -1,0 +1,22 @@
+services:
+  - type: static
+    name: n4h-nature-health
+    env: static
+    buildCommand: ""
+    publishPath: "."
+    headers:
+      - path: "/*"
+        name: X-Frame-Options
+        value: SAMEORIGIN
+      - path: "/*"
+        name: X-Content-Type-Options
+        value: nosniff
+      - path: "/*"
+        name: Referrer-Policy
+        value: strict-origin-when-cross-origin
+      - path: "/*"
+        name: Content-Security-Policy
+        value: "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'self';"
+    routes:
+      - type: fallback
+        path: /index.html

@@ -1,0 +1,12 @@
+{
+  "name": "n4h-presentation",
+  "version": "1.0.0",
+  "description": "Nature for Health Website Redesign Proposal",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "keywords": [],
+  "author": "Koech Creatives",
+  "license": "ISC"
+}

@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/Users/user/Dev/N4H/logs/.f02e51d010ea6bf1d9659d17c2d7bb4abe07f073-audit.json",
+    "files": [
+        {
+            "date": 1780395739902,
+            "name": "/Users/user/Dev/N4H/logs/mcp-puppeteer-2026-06-02.log",
+            "hash": "0b3cf0760bdcbb882daed74b874a5a6d52e08011850ea65f7c9021611714cccf"
+        }
+    ],
+    "hashType": "sha256"
+}
