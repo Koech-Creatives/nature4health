@@ -44,3 +44,18 @@
 {"level":"info","message":"Puppeteer MCP Server closing","service":"mcp-puppeteer","timestamp":"2026-06-02 21:30:16.107"}
 {"level":"info","message":"Starting MCP server","service":"mcp-puppeteer","timestamp":"2026-06-02 21:30:31.991"}
 {"level":"info","message":"MCP server started successfully","service":"mcp-puppeteer","timestamp":"2026-06-02 21:30:31.994"}
+{"level":"info","message":"Starting MCP server","service":"mcp-puppeteer","timestamp":"2026-06-02 22:12:53.159"}
+{"level":"info","message":"MCP server started successfully","service":"mcp-puppeteer","timestamp":"2026-06-02 22:12:53.163"}
+{"level":"info","message":"Puppeteer MCP Server closing","service":"mcp-puppeteer","timestamp":"2026-06-02 22:17:43.103"}
+{"level":"info","message":"Starting MCP server","service":"mcp-puppeteer","timestamp":"2026-06-02 22:17:52.831"}
+{"level":"info","message":"MCP server started successfully","service":"mcp-puppeteer","timestamp":"2026-06-02 22:17:52.835"}
+{"arguments":{"url":"https://nature4health.onrender.com/"},"level":"debug","message":"Tool call received","service":"mcp-puppeteer","timestamp":"2026-06-02 22:20:29.800","tool":"puppeteer_navigate"}
+{"0":"n","1":"p","2":"x","level":"info","message":"Launching browser with config:","service":"mcp-puppeteer","timestamp":"2026-06-02 22:20:29.801"}
+{"arguments":{"script":"() => document.title"},"level":"debug","message":"Tool call received","service":"mcp-puppeteer","timestamp":"2026-06-02 22:20:29.803","tool":"puppeteer_evaluate"}
+{"0":"n","1":"p","2":"x","level":"info","message":"Launching browser with config:","service":"mcp-puppeteer","timestamp":"2026-06-02 22:20:29.803"}
+{"level":"info","message":"Browser launched successfully","service":"mcp-puppeteer","timestamp":"2026-06-02 22:20:35.178"}
+{"level":"debug","message":"Executing script in browser","scriptLength":20,"service":"mcp-puppeteer","timestamp":"2026-06-02 22:20:35.179"}
+{"hasResult":false,"level":"debug","logCount":0,"message":"Script execution result","resultType":"undefined","service":"mcp-puppeteer","timestamp":"2026-06-02 22:20:35.181"}
+{"level":"info","message":"Browser launched successfully","service":"mcp-puppeteer","timestamp":"2026-06-02 22:20:37.271"}
+{"level":"info","message":"Navigating to URL","service":"mcp-puppeteer","timestamp":"2026-06-02 22:20:37.271","url":"https://nature4health.onrender.com/"}
+{"level":"info","message":"Navigation successful","service":"mcp-puppeteer","status":200,"timestamp":"2026-06-02 22:20:39.985","url":"https://nature4health.onrender.com/"}
