@@ -4,7 +4,8 @@
   "description": "Nature for Health Website Redesign Proposal",
   "main": "index.html",
   "scripts": {
-    "start": "npx serve ."
+    "start": "npx serve .",
+    "build": "echo 'No build step required for this static site.'"
   },
   "keywords": [],
   "author": "Koech Creatives",
