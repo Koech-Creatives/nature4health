@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>N4H — Website Redesign Proposal</title>
+  <meta name="description" content="Nature for Health website redesign proposal v2 — Two simplified strategic choices with an interactive alignment configurator for stakeholder workshops.">
+  
+  <!-- SEO tags -->
+  <meta name="author" content="Koech Creatives">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Preconnect and Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Persistent Logo Mark Header -->
+  <div class="top-logo">
+    <img src="assets/logo-mark.png" alt="N4H Logo Mark" class="top-logo__img">
+    <span class="top-logo__text">Nature for Health</span>
+  </div>
+
+  <!-- Progress Tracking Bar -->
+  <div class="progress-track">
+    <div class="progress-fill" id="progressFill"></div>
+  </div>
+
+  <!-- Slide Counter Panel -->
+  <div class="counter" id="counter">
+    <span class="counter__current" id="counterCurrent">01</span>
+    <span class="counter__sep"></span>
+    <span class="counter__total" id="counterTotal">12</span>
+  </div>
+
+  <!-- Fullscreen Control -->
+  <button class="fs-btn" id="fsBtn" aria-label="Toggle fullscreen mode">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M8 3H5a2 2 0 00-2 2v3m18 0V5a2 2 0 00-2-2h-3m0 18h3a2 2 0 002-2v-3M3 16v3a2 2 0 002 2h3"/>
+    </svg>
+  </button>
+
+  <!-- Slide Navigation controls -->
+  <nav class="nav" aria-label="Slide deck navigation">
+    <button class="nav__btn" id="prevBtn" aria-label="Previous slide" disabled>
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M15 18l-6-6 6-6"/>
+      </svg>
+    </button>
+    <button class="nav__btn" id="nextBtn" aria-label="Next slide">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M9 18l6-6-6-6"/>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- Keyboard Shortcuts Hints -->
+  <div class="hint" id="hint">
+    <kbd>←</kbd> <kbd>→</kbd> navigate · <kbd>F</kbd> fullscreen · <kbd>1</kbd>–<kbd>0</kbd> jump slide · <kbd>Space</kbd> next
+  </div>
+
+  <!-- Sidebar pagination indicators -->
+  <div class="dots" id="dots" aria-label="Slide indicators panel"></div>
+
+  <!-- Toast notification system for copies -->
+  <div class="toast" id="toast">Hex Code copied to clipboard!</div>
+
+  <!-- ============================================== -->
+  <!-- MAIN SLIDES DECK                               -->
+  <!-- ============================================== -->
+  <main class="deck" id="deck">
+
+    <!-- ===== SLIDE 1 — TITLE HERO ===== -->
+    <section class="s s--hero active" id="s-1" data-slide="1" aria-label="Title Slide">
+      <div class="s__bg-orbs"></div>
+      
+      <!-- Premium interactive parallax backdrop image -->
+   
+
+      <div class="s__inner s__inner--left" style="position: relative; z-index: 10;">
+        <div class="hero-brand a-up">
+          <img src="assets/white-logo.png" alt="Nature for Health Logo" class="hero-brand__logo">
+        </div>
+        <div class="hero-line a-up a-d1"></div>
+        <h1 class="hero-title a-up a-d1">Nature for Health</h1>
+        <p class="hero-sub a-up a-d2">Website Redesign Proposal v2</p>
+        <p class="hero-body a-up a-d3">
+          A simplified visual briefing outlining two distinct options for stakeholders to align N4H's digital infrastructure with its global mission.
+        </p>
+        <div class="hero-meta a-up a-d4">
+          <span>Prepared by Koech Creatives</span>
+          <span class="hero-meta__dot">·</span>
+          <span>For Nature for Health (N4H)</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SLIDE 2 — CONTEXT ===== -->
+    <section class="s s--white" id="s-2" data-slide="2" aria-label="Context Slide">
+      <div class="s__accent-right"></div>
+      <div class="s__inner s__inner--left">
+        <span class="label label--green a-up">WHY THIS REDESIGN MATTERS</span>
+        <h2 class="h2 h2--dark a-up a-d1">Your website is your primary<br>global communication hub.</h2>
+        <div class="rule a-up a-d1"></div>
+        <p class="body body--dark a-up a-d2">Nature for Health operates at the critical, growing intersection of biodiversity, environmental sustainability, and public health.</p>
+        <p class="body body--muted a-up a-d2">This proposal addresses four key opportunities to significantly strengthen the N4H digital platform:</p>
+        
+        <div class="context-grid a-up a-d3">
+          <div class="context-item">
+            <div class="context-item__icon" style="--accent: var(--green-1)">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10A15.3 15.3 0 0112 2z"/></svg>
+            </div>
+            <span>Global Visibility & Credibility</span>
+          </div>
+          <div class="context-item">
+            <div class="context-item__icon" style="--accent: var(--blue)">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+            </div>
+            <span>Stakeholder Engagement</span>
+          </div>
+          <div class="context-item">
+            <div class="context-item__icon" style="--accent: var(--teal)">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            </div>
+            <span>Scale & Maintainability</span>
+          </div>
+          <div class="context-item">
+            <div class="context-item__icon" style="--accent: var(--orange)">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+            </div>
+            <span>Storytelling & Impact</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SLIDE 3 — THE TWO OPTIONS ===== -->
+    <section class="s s--split" id="s-3" data-slide="3" aria-label="Two Options Overview">
+      <div class="split-panel split-panel--left" id="panelOption1" title="Click to view Option 1 details">
+        <div class="split-inner a-up">
+          <span class="split-num">01</span>
+          <h2 class="split-title">Option 1:<br>Refine & Improve</h2>
+          <p class="split-desc">A modernized, streamlined version of the current website built on a robust foundation.</p>
+          <button class="split-cta" aria-label="Go to Slide 4 (Option 1)">
+            Explore Option 1
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </div>
+      
+      <div class="split-panel split-panel--right" id="panelOption2" title="Click to view Option 2 details">
+        <div class="split-inner a-up a-d1">
+          <span class="split-num">02</span>
+          <h2 class="split-title">Option 2:<br>Fresh New Look</h2>
+          <p class="split-desc">A bold, complete redesign of the N4H experience prioritizing visual narrative.</p>
+          <button class="split-cta" aria-label="Go to Slide 7 (Option 2)">
+            Explore Option 2
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </div>
+      
+      <div class="split-or a-up a-d2">VS</div>
+    </section>
+
+    <!-- ===== SLIDE 4 — OPTION 1 INTRODUCTION ===== -->
+    <section class="s s--white s--bar-left" id="s-4" data-slide="4" aria-label="Option 1 Concept">
+      <div class="bar-left" style="--bar-color: var(--green-1)"></div>
+      <div class="s__inner s__inner--offset">
+        <span class="label label--green a-up">OPTION 1</span>
+        <h2 class="h2 h2--dark h2--lg a-up a-d1">Refine & Improve</h2>
+        <p class="subtitle a-up a-d1">A modernized version of the current N4H website.</p>
+        <div class="rule a-up a-d2"></div>
+        <p class="body body--dark a-up a-d2">This approach keeps the current structure, identity, and overall feel of the N4H website, while improving the user experience, navigation, content organization, and maintainability.</p>
+        <p class="body body--accent a-up a-d3">
+          The goal is not to reinvent N4H, but to make the existing website easier to use, easier to manage, and more effective.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== SLIDE 5 — OPTION 1 DETAILS ===== -->
+    <section class="s s--white" id="s-5" data-slide="5" aria-label="Option 1 Key Benefits">
+      <div class="s__inner s__inner--wide">
+        <span class="label label--green a-up">OPTION 1 — STRATEGIC VALUES</span>
+        <h2 class="h2 h2--dark h2--sm a-up a-d1">What This Direction Delivers</h2>
+        
+        <div class="check-grid a-up a-d2">
+          <div class="check-item"><span class="check">✓</span>Cleaner and more intuitive navigation</div>
+          <div class="check-item"><span class="check">✓</span>Better organization of reports, projects, and resources</div>
+          <div class="check-item"><span class="check">✓</span>Easier content management through a modern CMS</div>
+          <div class="check-item"><span class="check">✓</span>Responsive, top-tier mobile experience</div>
+          <div class="check-item"><span class="check">✓</span>Optimized search engine visibility (SEO)</div>
+          <div class="check-item"><span class="check">✓</span>Blazing-fast page load speeds</div>
+          <div class="check-item"><span class="check">✓</span>Stronger visual calls-to-action (CTAs)</div>
+        </div>
+
+        <div class="rule a-up a-d3"></div>
+        
+        <div class="two-col a-up a-d3">
+          <div class="col-block">
+            <span class="label label--green">Benefits</span>
+            <ul class="mini-list">
+              <li>Familiar to existing users & partner institutions</li>
+              <li>Lower learning curve for N4H internal staff</li>
+              <li>Significantly easier to maintain and update daily</li>
+              <li>Lower technical risk and faster deployment</li>
+              <li>Preserves established N4H communication equity</li>
+            </ul>
+          </div>
+          
+          <div class="col-block">
+            <span class="label label--green">Best For</span>
+            <p class="body body--dark">
+              If N4H wants to <strong>improve what already works</strong> while creating a stronger, cleaner operational foundation for future growth.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SLIDE 6 — OPTION 1 INSPIRATION ===== -->
+    <section class="s s--light" id="s-6" data-slide="6" aria-label="Option 1 Inspiration References">
+      <div class="s__inner s__inner--wide">
+        <span class="label label--green a-up">OPTION 1 — INSPIRATION</span>
+        <h2 class="h2 h2--dark h2--sm a-up a-d1">Reference Benchmarks</h2>
+        <p class="body body--muted a-up a-d1">These models illustrate clean and structured layouts, easy navigation, and strong institutional credibility:</p>
+        
+        <div class="ref-grid a-up a-d2">
+          <div class="ref-card" data-ref="n4h-curr" title="Click to view design takeaways">
+            <div class="ref-card__img" style="--bg: linear-gradient(135deg, var(--green-1), var(--blue))">
+              <span class="ref-card__initials">N4H</span>
+            </div>
+            <div class="ref-card__info">
+              <h3>Nature for Health</h3>
+              <p>Current Website (Foundation)</p>
+            </div>
+          </div>
+
+          <div class="ref-card" data-ref="dswf" title="Click to view design takeaways">
+            <div class="ref-card__img" style="--bg: linear-gradient(135deg, #1b382b, #4b6b55)">
+              <span class="ref-card__initials">DSWF</span>
+            </div>
+            <div class="ref-card__info">
+              <h3>David Shepherd Wildlife</h3>
+              <p>Clear structured fundraising and advocacy</p>
+            </div>
+          </div>
+
+          <div class="ref-card" data-ref="wci" title="Click to view design takeaways">
+            <div class="ref-card__img" style="--bg: linear-gradient(135deg, #1e4554, #487282)">
+              <span class="ref-card__initials">WCI</span>
+            </div>
+            <div class="ref-card__info">
+              <h3>Wildlife Coexistence</h3>
+              <p>Clean layout of complex technical guidelines</p>
+            </div>
+          </div>
+
+          <div class="ref-card" data-ref="eu" title="Click to view design takeaways">
+            <div class="ref-card__img" style="--bg: linear-gradient(135deg, #a36200, #d4932c)">
+              <span class="ref-card__initials">EU</span>
+            </div>
+            <div class="ref-card__info">
+              <h3>Erlebnis Unganisha</h3>
+              <p>Sleek institutional presentation & resources</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SLIDE 7 — OPTION 2 INTRODUCTION ===== -->
+    <section class="s s--teal" id="s-7" data-slide="7" aria-label="Option 2 Concept">
+      <div class="s__bg-orbs s__bg-orbs--alt"></div>
+      <div class="s__inner s__inner--left">
+        <span class="label label--white a-up">OPTION 2</span>
+        <h2 class="h2 h2--white h2--lg a-up a-d1">Fresh New Look</h2>
+        <p class="subtitle subtitle--light a-up a-d1">A complete redesign of the N4H digital experience.</p>
+        <div class="rule rule--white a-up a-d2"></div>
+        <p class="body body--white a-up a-d2">This approach reimagines how N4H presents its work online. Rather than simply improving the existing website, we create a more modern, engaging, and memorable experience that better communicates the importance of the Nature-Health connection.</p>
+        <p class="body body--white-bright a-up a-d3">
+          The focus is on making N4H stand out as a global leader in the One Health space.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== SLIDE 8 — OPTION 2 DETAILS ===== -->
+    <section class="s s--white" id="s-8" data-slide="8" aria-label="Option 2 Key Benefits">
+      <div class="s__inner s__inner--wide">
+        <span class="label label--teal a-up">OPTION 2 — IMPACT VALUES</span>
+        <h2 class="h2 h2--dark h2--sm a-up a-d1">What This Direction Reimagines</h2>
+        
+        <div class="check-grid check-grid--teal a-up a-d2">
+          <div class="check-item"><span class="check check--teal">✓</span>Immersive scientific storytelling module</div>
+          <div class="check-item"><span class="check check--teal">✓</span>Highly engaging, interactive home experience</div>
+          <div class="check-item"><span class="check check--teal">✓</span>Rich visual presentation of country projects & outcomes</div>
+          <div class="check-item"><span class="check check--teal">✓</span>Extended visitor session retention</div>
+          <div class="check-item"><span class="check check--teal">✓</span>Modern global digital brand authority</div>
+          <div class="check-item"><span class="check check--teal">✓</span>Optimized content shareability & social visibility</div>
+          <div class="check-item"><span class="check check--teal">✓</span>Memorable sensory user experience</div>
+        </div>
+
+        <div class="rule a-up a-d3"></div>
+        
+        <div class="two-col a-up a-d3">
+          <div class="col-block">
+            <span class="label label--teal">Benefits</span>
+            <ul class="mini-list">
+              <li>Creates a leading, modern global presence</li>
+              <li>Helps N4H stand out from similar initiatives</li>
+              <li>Better communicates real-world outcomes and impact</li>
+              <li>Encourages deeper content exploration and learning</li>
+              <li>Builds strong backing for global advocacy campaigns</li>
+            </ul>
+          </div>
+          
+          <div class="col-block">
+            <span class="label label--teal">Best For</span>
+            <p class="body body--dark">
+              If N4H wants to <strong>reposition itself</strong> with a bolder, highly visual, and modern digital identity.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SLIDE 9 — OPTION 2 INSPIRATION ===== -->
+    <section class="s s--light" id="s-9" data-slide="9" aria-label="Option 2 Inspiration References">
+      <div class="s__inner s__inner--wide">
+        <span class="label label--teal a-up">OPTION 2 — INSPIRATION</span>
+        <h2 class="h2 h2--dark h2--sm a-up a-d1">Reference Benchmarks</h2>
+        <p class="body body--muted a-up a-d1">These models illustrate creative visual storytelling, emotional connection, and high public impact:</p>
+        
+        <div class="ref-grid ref-grid--5 a-up a-d2">
+          <div class="ref-card" data-ref="carbon-direct" title="Click to view design takeaways">
+            <div class="ref-card__img" style="--bg: linear-gradient(135deg, #0c1821, #2b3a4a)">
+              <span class="ref-card__initials">CD</span>
+            </div>
+            <div class="ref-card__info">
+              <h3>Carbon Direct</h3>
+              <p>Premium dark grids and slick micro-interactions</p>
+            </div>
+          </div>
+
+          <div class="ref-card" data-ref="wildfire" title="Click to view design takeaways">
+            <div class="ref-card__img" style="--bg: linear-gradient(135deg, #8b2b1a, #ba4a30)">
+              <span class="ref-card__initials">FW</span>
+            </div>
+            <div class="ref-card__info">
+              <h3>Following Wildfire</h3>
+              <p>Highly cinematic, media-rich editorial layouts</p>
+            </div>
+          </div>
+
+          <div class="ref-card" data-ref="wildlife-la" title="Click to view design takeaways">
+            <div class="ref-card__img" style="--bg: linear-gradient(135deg, #1b4b2c, #2b6c3f)">
+              <span class="ref-card__initials">WLA</span>
+            </div>
+            <div class="ref-card__info">
+              <h3>Wildlife LA</h3>
+              <p>Stunning typography & community-oriented maps</p>
+            </div>
+          </div>
+
+          <div class="ref-card" data-ref="lakes" title="Click to view design takeaways">
+            <div class="ref-card__img" style="--bg: linear-gradient(135deg, #163e5c, #2d6b99)">
+              <span class="ref-card__initials">WSL</span>
+            </div>
+            <div class="ref-card__info">
+              <h3>Sydney Lakes</h3>
+              <p>Modern layouts, smooth parallax and shapes</p>
+            </div>
+          </div>
+
+          <div class="ref-card" data-ref="nzon" title="Click to view design takeaways">
+            <div class="ref-card__img" style="--bg: linear-gradient(135deg, #324c3a, #52755d)">
+              <span class="ref-card__initials">NF</span>
+            </div>
+            <div class="ref-card__info">
+              <h3>Nzon Foot</h3>
+              <p>Immersive, visual nature explorations</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SLIDE 10 — BRAND CONTINUITY ===== -->
+    <section class="s s--brand" id="s-10" data-slide="10" aria-label="Brand Continuity Slide">
+      <div class="s__bg-orbs"></div>
+      <div class="s__inner s__inner--wide">
+        <span class="label label--white a-up">IMPORTANT BRANDING CONTEXT</span>
+        <h2 class="h2 h2--white h2--md a-up a-d1">The Redesign Focuses on Structure,<br>Preserving the N4H Brand Identity</h2>
+        <p class="body body--white a-up a-d2">
+          Regardless of the direction selected, the redesign will continue to follow existing N4H brand guidelines, logo standards, and approved color palettes.
+        </p>
+
+        <div class="two-col a-up a-d2" style="grid-template-columns: 1fr 1.2fr; margin-bottom: 2rem;">
+          <div class="brand-points-column">
+            <div class="brand-point" style="text-align: left; margin-bottom: 0.75rem;">Existing N4H logo remains completely unchanged</div>
+            <div class="brand-point" style="text-align: left; margin-bottom: 0.75rem;">Approved color families remain intact and active</div>
+            <div class="brand-point" style="text-align: left; margin-bottom: 0.75rem;">Visual identity remains instantly recognizable</div>
+            <div class="brand-point" style="text-align: left;">Focus is purely on structure, UX, and communication</div>
+          </div>
+          
+          <div class="brand-showcase">
+            <div class="brand-card">
+              <img src="assets/white-logo.png" alt="N4H White Logo" class="brand-card__logo">
+              <span>Dark Background Version</span>
+            </div>
+            <div class="brand-card brand-card--light">
+              <img src="assets/main-logo.png" alt="N4H Main Logo" class="brand-card__logo">
+              <span>Light Background Version</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="rule rule--white a-up a-d3"></div>
+        <span class="label label--white a-up a-d3">APPROVED BRAND COLOR SYSTEM</span>
+        
+        <div class="color-swatches a-up a-d3">
+          <div class="swatch" data-hex="#2BB673">
+            <div class="swatch__circle" style="background: rgb(43, 182, 115)"></div>
+            <span class="swatch__name">Primary Green</span>
+            <span class="swatch__val">RGB 43, 182, 115</span>
+          </div>
+
+          <div class="swatch" data-hex="#72BF44">
+            <div class="swatch__circle" style="background: rgb(114, 191, 68)"></div>
+            <span class="swatch__name">Secondary Green</span>
+            <span class="swatch__val">RGB 114, 191, 68</span>
+          </div>
+
+          <div class="swatch" data-hex="#005877">
+            <div class="swatch__circle" style="background: rgb(0, 88, 119)"></div>
+            <span class="swatch__name">Primary Blue</span>
+            <span class="swatch__val">RGB 0, 88, 119</span>
+          </div>
+
+          <div class="swatch" data-hex="#32BCAD">
+            <div class="swatch__circle" style="background: rgb(50, 188, 173)"></div>
+            <span class="swatch__name">Supporting Teal</span>
+            <span class="swatch__val">RGB 50, 188, 173</span>
+          </div>
+
+          <div class="swatch" data-hex="#F7941D">
+            <div class="swatch__circle" style="background: rgb(247, 148, 29)"></div>
+            <span class="swatch__name">Accent Orange</span>
+            <span class="swatch__val">RGB 247, 148, 29</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SLIDE 11 — RECOMMENDATION & CONFIGURATOR ===== -->
+    <section class="s s--hero" id="s-11" data-slide="11" aria-label="Recommendation and Priority Wizard">
+      <div class="s__bg-orbs"></div>
+      <div class="s__inner s__inner--wide">
+        
+        <div class="rec-split">
+          <!-- Left Panel: Strategic Hybrid Proposal -->
+          <div>
+            <span class="label label--glow a-up">RECOMMENDED STRATEGY</span>
+            <h2 class="h2 h2--white h2--md a-up a-d1">A Balanced, Hybrid Approach</h2>
+            <p class="body body--white a-up a-d2" style="font-size: 0.95rem;">
+              A balanced approach that keeps the trust and familiarity of the current N4H website while introducing selected elements from the Fresh New Look approach where they can strengthen storytelling, engagement, and visibility.
+            </p>
+
+            <div class="rec-blocks a-up a-d2">
+              <div class="rec-block rec-block--foundation">
+                <div class="rec-block__badge" style="--badge-bg: var(--green-1)">Foundation</div>
+                <h3 class="rec-block__title">Refine & Improve</h3>
+                <p class="rec-block__desc">Navigation structure, modern CMS, fast page load speeds, and rock-solid SEO architecture.</p>
+                <div class="rec-block__sites">
+                  <span>Nature for Health</span>
+                  <span>David Shepherd Wildlife</span>
+                  <span>Wildlife Coexistence</span>
+                </div>
+              </div>
+              
+              <div class="rec-block rec-block--layer">
+                <div class="rec-block__badge" style="--badge-bg: var(--teal)">Visual Layer</div>
+                <h3 class="rec-block__title">Fresh New Look</h3>
+                <p class="rec-block__desc">Cinematic case study blocks, emotional visual assets, dynamic layouts, and campaign hubs.</p>
+                <div class="rec-block__sites">
+                  <span>Carbon Direct</span>
+                  <span>Following Wildfire</span>
+                  <span>Wildlife LA</span>
+                  <span>Western Sydney Lakes</span>
+                </div>
+              </div>
+            </div>
+            
+            <p class="rec-outcome a-up a-d3" style="font-size: 0.9rem;">
+              This recommendation is usually the easiest for stakeholders to align around because it feels <strong>practical rather than radical</strong>.
+            </p>
+          </div>
+
+          <!-- Right Panel: Interactive Alignment Wizard -->
+          <div class="a-up a-d2">
+            <div class="wizard-widget">
+              <h3 class="wizard-widget__title">Stakeholder Alignment Wizard</h3>
+              <p class="wizard-widget__subtitle">Toggle your organization parameters to identify the optimal strategic match:</p>
+              
+              <div class="wizard-factor">
+                <span class="wizard-factor__name">Risk & Scope Tolerance</span>
+                <div class="wizard-toggle-group" id="toggleRisk">
+                  <button class="wizard-toggle-btn active" data-val="low">Familiar & Safe</button>
+                  <button class="wizard-toggle-btn" data-val="high">Bold & Redesigned</button>
+                </div>
+              </div>
+
+              <div class="wizard-factor">
+                <span class="wizard-factor__name">Primary Value Objective</span>
+                <div class="wizard-toggle-group" id="toggleValue">
+                  <button class="wizard-toggle-btn active" data-val="ops">Operations & CMS</button>
+                  <button class="wizard-toggle-btn" data-val="story">Engagement & Impact</button>
+                </div>
+              </div>
+
+              <div class="wizard-factor">
+                <span class="wizard-factor__name">Primary Audience Focus</span>
+                <div class="wizard-toggle-group" id="toggleAudience">
+                  <button class="wizard-toggle-btn active" data-val="inst">Institutional Partners</button>
+                  <button class="wizard-toggle-btn" data-val="pub">Public & Media</button>
+                </div>
+              </div>
+
+              <div class="wizard-results">
+                <div class="wizard-score">
+                  <span class="wizard-score__label">Refine Match</span>
+                  <div class="wizard-progress-track">
+                    <div class="wizard-progress-fill" id="fillOption1" style="width: 80%;"></div>
+                  </div>
+                  <span class="wizard-score__val" id="valOption1">80%</span>
+                </div>
+
+                <div class="wizard-score">
+                  <span class="wizard-score__label">Fresh Match</span>
+                  <div class="wizard-progress-track">
+                    <div class="wizard-progress-fill" id="fillOption2" style="width: 40%;"></div>
+                  </div>
+                  <span class="wizard-score__val" id="valOption2">40%</span>
+                </div>
+
+                <div class="wizard-verdict" id="verdictBlock">
+                  Recommendation: Refine & Improve Foundation (Highly Aligned)
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== SLIDE 12 — NEXT STEPS ACCORDION ===== -->
+    <section class="s s--white" id="s-12" data-slide="12" aria-label="Next Steps Slide">
+      <div class="s__inner s__inner--center">
+        <span class="label label--green a-up">ROADMAP</span>
+        <h2 class="h2 h2--dark a-up a-d1">Implementation Roadmap</h2>
+        <p class="body body--muted a-up a-d1" style="margin-bottom: 0.5rem;">Click on any step below to expand key deliverables and objective descriptions:</p>
+        
+        <!-- Interactive Accordion Timeline -->
+        <div class="steps-list a-up a-d2">
+          
+          <div class="step active" data-step="1">
+            <div class="step__num" style="--step-color: var(--green-1)">1</div>
+            <div class="step__info">
+              <div class="step__text-container">
+                <span class="step__title">1. Stakeholder Alignment & Scope Definition</span>
+                <span class="step__desc">Agree on strategic direction, hybrid parameters, and project milestones</span>
+              </div>
+              <div class="step__toggle-indicator">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+              </div>
+            </div>
+            <div class="step__details">
+              <div class="step__details-body">
+                <strong>Key Deliverables:</strong> Run alignment workshops using the priority configurator, draft the strategic design brief, and establish consensus on the hybrid blend ratio.<br>
+                <strong>Timeline:</strong> Weeks 1 - 2
+              </div>
+            </div>
+          </div>
+
+          <div class="step" data-step="2">
+            <div class="step__num" style="--step-color: var(--green-2)">2</div>
+            <div class="step__info">
+              <div class="step__text-container">
+                <span class="step__title">2. Content Audit & Migration Mapping</span>
+                <span class="step__desc">Review existing reports, structures, and catalog assets</span>
+              </div>
+              <div class="step__toggle-indicator">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+              </div>
+            </div>
+            <div class="step__details">
+              <div class="step__details-body">
+                <strong>Key Deliverables:</strong> Map the technical repository of country briefs, wildlife publications, and environmental reports into a metadata catalog for easy searchability.<br>
+                <strong>Timeline:</strong> Weeks 3 - 4
+              </div>
+            </div>
+          </div>
+
+          <div class="step" data-step="3">
+            <div class="step__num" style="--step-color: var(--teal)">3</div>
+            <div class="step__info">
+              <div class="step__text-container">
+                <span class="step__title">3. Information Architecture & UX Wireframes</span>
+                <span class="step__desc">Design user flows, responsive sitemaps, and content navigation paths</span>
+              </div>
+              <div class="step__toggle-indicator">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+              </div>
+            </div>
+            <div class="step__details">
+              <div class="step__details-body">
+                <strong>Key Deliverables:</strong> User testing wireframes for desktop & mobile, optimized search interface layout, and clean, streamlined navigation flows for global leads.<br>
+                <strong>Timeline:</strong> Weeks 5 - 7
+              </div>
+            </div>
+          </div>
+
+          <div class="step" data-step="4">
+            <div class="step__num" style="--step-color: var(--blue)">4</div>
+            <div class="step__info">
+              <div class="step__text-container">
+                <span class="step__title">4. CMS Platform Selection & Design Prototyping</span>
+                <span class="step__desc">Select the technology stack and create polished visual mockups</span>
+              </div>
+              <div class="step__toggle-indicator">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+              </div>
+            </div>
+            <div class="step__details">
+              <div class="step__details-body">
+                <strong>Key Deliverables:</strong> Evaluation matrix for modern visual CMS (e.g. Webflow, WordPress + Gutenberg blocks), responsive UI mockup prototypes, and interactive storytelling design screens.<br>
+                <strong>Timeline:</strong> Weeks 8 - 10
+              </div>
+            </div>
+          </div>
+
+          <div class="step" data-step="5">
+            <div class="step__num" style="--step-color: var(--orange)">5</div>
+            <div class="step__info">
+              <div class="step__text-container">
+                <span class="step__title">5. Technical Build, QA, & Phased Delivery</span>
+                <span class="step__desc">Responsive implementation, SEO audits, and public launch</span>
+              </div>
+              <div class="step__toggle-indicator">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+              </div>
+            </div>
+            <div class="step__details">
+              <div class="step__details-body">
+                <strong>Key Deliverables:</strong> Hand-off tested frontend layouts, migrate active catalog elements, run final SEO redirect audits, and complete N4H public deployment.<br>
+                <strong>Timeline:</strong> Weeks 11 - 14
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="cta-block a-up a-d3">
+          <p class="cta-text">Ready to elevate N4H's digital presence?</p>
+          <p class="cta-sub">Let's align on a unified, high-impact direction.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================== -->
+  <!-- REFERENCE TAKEAWAYS POPUP OVERLAY              -->
+  <!-- ============================================== -->
+  <div class="ref-popup" id="refPopup" aria-hidden="true" role="dialog" aria-labelledby="popupTitle">
+    <div class="ref-popup__content">
+      <button class="ref-popup__close" id="popupClose" aria-label="Close details dialog">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+      <h3 class="ref-popup__title" id="popupTitle">Reference Details</h3>
+      <span class="ref-popup__sub" id="popupSub">Option Takeaway</span>
+      
+      <div class="ref-popup__list" id="popupList">
+        <!-- Dynamic list entries go here -->
+      </div>
+      
+      <a href="#" target="_blank" rel="noopener" class="ref-popup__btn" id="popupLink">
+        Visit Website
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
