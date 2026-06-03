@@ -8,7 +8,7 @@
   'use strict';
 
   // ---- Presentation Configuration ----
-  const TOTAL_SLIDES = 12;
+  const TOTAL_SLIDES = 21;
   let currentSlide = 1;
   let isTransitioning = false;
   const TRANSITION_DURATION = 750; // ms — matches CSS speed
@@ -240,9 +240,9 @@
 
     panel2.addEventListener('click', (e) => {
       if (e.target.closest('.split-cta')) {
-        goToSlide(7); // Jump to Option 2 intro
+        goToSlide(11); // Jump to Option 2 intro
       } else {
-        goToSlide(7);
+        goToSlide(11);
       }
     });
   }
@@ -318,7 +318,7 @@
           goToSlide(parseInt(e.key, 10));
         } else if (e.key === '0') {
           e.preventDefault();
-          goToSlide(10);
+          goToSlide(19);
         }
         break;
     }
